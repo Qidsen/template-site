@@ -9,7 +9,7 @@
 ## Opened filters
 ![image](https://user-images.githubusercontent.com/49961010/122541872-cd863900-d032-11eb-943c-42d090dd4eb8.png)
 
-### DISCLAIMER!
+# DISCLAIMER!
 ## IT'S ONLY TEMPLATE OF WEBSITE WITH SOME LOGIC, DON'T USE FOR SOME COMMERCIAL PURPOSES!
 
 ## Project setup
