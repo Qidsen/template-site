@@ -1,21 +1,16 @@
-# crypto-exchaner-vue
+# template-site using element-ui
 
-## Main page
-![image](https://user-images.githubusercontent.com/49961010/120115160-1c0a8b00-c18b-11eb-8d6f-d3698c332194.png)
+## Main page with sidebar, filters, form and rates
+![image](https://user-images.githubusercontent.com/49961010/122541688-99127d00-d032-11eb-8171-0bcaa79cf146.png)
 
-## Valid data for trade
-![image](https://user-images.githubusercontent.com/49961010/120116045-ed8eaf00-c18e-11eb-932e-e385c6b9b932.png)
+## Rate collapse
+![image](https://user-images.githubusercontent.com/49961010/122541817-bf381d00-d032-11eb-9abb-44419be1dfd8.png)
 
-## Changing currency on click icon switch
-![image](https://user-images.githubusercontent.com/49961010/120115475-79eba280-c18c-11eb-8ad9-173272c9e2e2.png)
+## Opened filters
+![image](https://user-images.githubusercontent.com/49961010/122541872-cd863900-d032-11eb-943c-42d090dd4eb8.png)
 
-## Information about successful operation
-![image](https://user-images.githubusercontent.com/49961010/120115822-385bf700-c18e-11eb-9dc8-853ef32687e5.png)
-
-## Back to the trade (changed fund)
-![image](https://user-images.githubusercontent.com/49961010/120115908-617c8780-c18e-11eb-9549-6ff343c66897.png)
-
-### If you want to get access manually to route '/success-trade' and operation with exchanging didn't success, you will be redirected to main page!
+### DISCLAIMER!
+## IT'S ONLY TEMPLATE OF WEBSITE WITH SOME LOGIC, DON'T USE FOR SOME COMMERCIAL PURPOSES!
 
 ## Project setup
 ```
