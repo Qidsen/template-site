@@ -57,6 +57,7 @@ export default {
 
 <style scoped lang="scss">
   aside {
+    position: fixed;
     padding: 18px 12px;
     display: flex;
     flex-direction: column;
