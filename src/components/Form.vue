@@ -194,10 +194,6 @@ export default {
       display: flex;
       flex-direction: column;
     }
-    .webpage__form-block--input input {
-      width: 58vh;
-      height: 68px;
-    }
     .el-form-item__label {
       padding: 10px 0px;
       font-family: Roboto;
@@ -265,16 +261,30 @@ export default {
       font-weight: 400;
     }
   }
+  .webpage__form-component {
+      .webpage__form-block--input {
+        width: 80%;
 
-  @media all and (max-width: 1024px) {
-    .webpage__form-component .webpage__form-block--input input {
-      width: 52vh;
+        .el-form-item {
+          width: 46%;
+        }
+
+        input {
+          height: 68px;
+        }
+      }
     }
-  }
 
-  @media all and (max-width: 812px) {
-    .webpage__form-component .webpage__form-block--input input {
-      width: 49vh;
+  @media all and (max-width: 768px) {
+    .webpage__form-component {
+      width: calc(100% - 40px);
+      .webpage__form-block--input {
+        width: 100%;
+
+        .el-form-item {
+          width: 100%;
+        }
+      }
     }
   }
 </style>

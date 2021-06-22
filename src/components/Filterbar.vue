@@ -436,8 +436,7 @@ export default {
 
   @media all and (max-width: 1551px) {
     .webpage__filter-show {
-      width: 100%;
-      
+      width: calc(100% - 70px);
       .webpage__filter-items {
         display: flex;
         flex-direction: row;
