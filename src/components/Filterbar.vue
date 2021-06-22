@@ -8,7 +8,7 @@
         </el-button>
       </div>
       <div class="d-flex webpage__checkbox-wrapper">
-        <div class="d-flex webpage__categories align-center">
+        <div class="d-flex webpage__categories">
           <label class="webpage__checkbox-group-label">Categories</label>
           <el-checkbox-group v-model="checkbox.categories">
             <el-checkbox label="All"></el-checkbox>
@@ -16,7 +16,7 @@
             <el-checkbox label="New Product"></el-checkbox>
           </el-checkbox-group>
         </div>
-        <div class="d-flex webpage__items align-center">
+        <div class="d-flex webpage__items">
           <label class="webpage__checkbox-group-label">Items</label>
           <el-checkbox-group v-model="checkbox.items">
             <el-checkbox label="All"></el-checkbox>
@@ -231,13 +231,13 @@ export default {
     }
     .webpage__select-items {
       justify-content: space-between;
+      width: 90%;
     }
     .webpage__checkbox-wrapper {
-      width: 786px;
-      height: 19px;
-      margin-left: 50px;
+      width: 50%;
+      height: 5%;
+      flex-wrap: wrap;
       padding: 16px 110px 16px 24px;
-      align-items: center;
       justify-content: space-between;
       background-color: #CDDAEA;
       box-shadow: 0px 2px 8px rgba(0, 0, 1, 0.15);
@@ -275,15 +275,15 @@ export default {
     background-color: #CDDAEA;
     padding: 20px 20px;
     width: 80%;
-    height: 250px;
+    border-radius: 0px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     .webpage__filter-items {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
+      flex-wrap: wrap;
     
       .webpage__filter-input, .webpage__filter-select {
         display: flex;
@@ -293,6 +293,7 @@ export default {
         .webpage__filter-block {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
 
           .el-form-item {
             font-family: Roboto;
@@ -356,6 +357,10 @@ export default {
           line-height: 18px;
           margin: 0;
 
+          &::before, &::after {
+            content: none;
+          }
+
           .webpage__filter-dropdown {
             margin-right: 10px;
             font-family: Roboto;
@@ -372,7 +377,10 @@ export default {
     .webpage__filter-buttons {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      
       margin: 0px 10px 0px 10px;
+      padding-top: 30px;
 
       .webpage__filter-buttons-left {
         .webpage__filter-button--reset {
@@ -418,5 +426,61 @@ export default {
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
     opacity: 0;
+  }
+
+  @media all and (max-width: 1830px) {
+    .webpage__filter-total {
+      padding: 10px 10px;
+    }
+  }
+
+  @media all and (max-width: 1551px) {
+    .webpage__filter-show {
+      width: 100%;
+      
+      .webpage__filter-items {
+        display: flex;
+        flex-direction: row;
+
+        .webpage__filter-block {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      hr {
+        display: none;
+      }
+    }
+  }
+
+  @media all and (max-width: 1200px) {
+    .webpage__select-items {
+      flex-direction: column-reverse;
+    }
+    .webpage__filter-wrapper {
+      padding-top: 24px;
+    }
+    .webpage__categories, .webpage__items {
+      flex-direction: column;
+      
+      .el-checkbox-group {
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+      }
+    }
+    .webpage__filter-show .webpage__filter-buttons {
+      display: block;
+      
+      .webpage__filter-buttons-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .el-button {
+          margin-left: 0;
+        }
+      }
+    }
   }
 </style>

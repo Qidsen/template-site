@@ -53,3 +53,15 @@ h1 {
   color: #5093E1;
   margin-left: 4px;
 }
+
+@media all and (max-width: 1024px) {
+  .webpage__main {
+    margin: 24px 117px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .webpage__main {
+    margin: 24px 94px;
+  }
+}

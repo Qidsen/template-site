@@ -181,13 +181,11 @@ export default {
       box-shadow: 0px 2px 8px rgba(0, 0, 1, 0.15);
       border-radius: 10px;
     }
-    .el-form-item, .webpage__form-submit {
-      margin-left: 10px;
-    }
     .webpage__form-block, .webpage__form-block--input {
-      width: 60%;
+      width: 80%;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     .webpage__form-block .el-form-item__content, .webpage__form-block input {
       width: 230px;
@@ -197,7 +195,7 @@ export default {
       flex-direction: column;
     }
     .webpage__form-block--input input {
-      width: 482px;
+      width: 58vh;
       height: 68px;
     }
     .el-form-item__label {
@@ -265,6 +263,18 @@ export default {
       font-family: Roboto;
       font-size: 15px;
       font-weight: 400;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    .webpage__form-component .webpage__form-block--input input {
+      width: 52vh;
+    }
+  }
+
+  @media all and (max-width: 812px) {
+    .webpage__form-component .webpage__form-block--input input {
+      width: 49vh;
     }
   }
 </style>

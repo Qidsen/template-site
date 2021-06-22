@@ -62,7 +62,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 36px);
+    height: 100%;
     width: 76px;
     background-color: white;  
   }
@@ -96,6 +96,18 @@ export default {
       left: 0;
       position: absolute;
       background-color: #5093E1;
+    }
+  }
+
+  @media all and (max-width: 1024px) {
+    aside {
+      width: 57px;
+    }
+  }
+
+  @media all and (max-width: 812px) {
+    aside {
+      width: 38px;
     }
   }
 </style>

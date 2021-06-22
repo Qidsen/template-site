@@ -45,9 +45,11 @@ export default {
 <style lang="scss">
   .webpage__exchange {
     padding-top: 50px;
+
     .el-collapse {
       border: none;
     }
+    
     .el-collapse-item {
       margin-bottom: -1px;
       background-color: #CDDAEA;
@@ -55,6 +57,7 @@ export default {
       overflow: hidden;
       padding: 24px;
       width: 50%;
+
       .el-collapse-item__header {
         background: transparent;
         border: none;
@@ -65,13 +68,16 @@ export default {
           font-weight: 700;
           line-height: 24px;
         }
-        .el-collapse-item__wrap {
+
+      .el-collapse-item__wrap {
         background: transparent;
       }
     }
     .webpage__exchange-form {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;
+      flex-wrap: wrap;
+
       label {
         color: #7C869C;
         font-family: Roboto;
@@ -79,6 +85,7 @@ export default {
         font-weight: 700;
         line-height: 18px;
       }
+
       input {
         color: #7C869C;
         font-family: Roboto;
